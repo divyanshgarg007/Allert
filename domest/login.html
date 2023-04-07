@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Frilec Style CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="assets/css/customStyledomest.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/js/Vendor/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="assets/js/Vendor/fancybox/helpers/jquery.fancybox-thumbs.css" />
+	<link href="assets/css/zoom.css" rel="stylesheet" />
+  <!-- Important crousal stylesheet -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+  <title>Login</title>
+  <style>
+  .login-wrap h5{
+font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #4E545F;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+	}
+	.login-wrap a{
+	text-decoration:none;
+	}
+	.login-forms{
+	width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	.topcontentlogin{
+	box-shadow: none;
+	    padding: 35px 70px;
+	}
+	.Loginheading h2{
+	    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 143.69%;
+	    color: #4FC3C5;
+	}
+	.Loginheading h2::after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    background: #4FC3C5;
+    height: 2px;
+    display: block;
+    margin: 10px auto 0px;
+}
+.Loginheading p{
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    color: #4E545F;
+	}
+	.ipt-form{
+	height:45px;
+	}
+	.mbt-20{
+	margin-bottom:25px;
+	}
+	.btnLogin{
+	background: #4FC3C5;
+    padding: 0;
+	font-size:19px;
+    color: #fff;
+    width: 25%;
+	font-family: 'Lato', sans-serif;
+	  margin-left: auto;
+    margin-right: auto;
+	border-radius: .25rem;
+    text-align: center;
+    cursor: pointer;
+	}
+	
+	@media(max-width:767px){
+	.topcontentlogin{	
+	    padding: 10px;
+	}
+	.login-forms{
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	}
+	.fields-icon {
+    float: right;
+ 
+   position: relative;
+    z-index: 2;
+    right: 5px;
+    bottom: 33px;
+}
+  </style>
+  
+</head>
+
+<body>
+  <div>
+    <div class="headerSection">
+      <!-- <div class="overlayWraper"> </div> -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/domest_logo.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>       
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Brands </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Working for Domest  </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                   
+                  </ul>          
+                </div>
+              </nav>
+            </div>
+          </div>       
+        </div>
+      <div class="headerSectionInnerDomest">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              
+              <div class="input-group searchWrap">
+                <input class="form-control" type="search" value="search" id="example-search-input">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                      <img src="./assets/images/searcgIcon.png" alt=""/>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 align-self-end">
+             
+            </div>
+          </div> 
+          <div class="bottomSpace"></div> 
+        </div>
+      </div>
+	  
+	  <div class="bodySection">
+      <div class="container"> 
+        <div class="topContentBgOut">
+        <div class="topContentBg topcontentlogin">
+		<div class="Loginheading text-center">
+                            <h2 class="title">Login</h2>
+                            <p>If you have an account with us, please log in.</p>
+                        </div>
+		<form class="login-forms">
+  <div class="form-group mbt-20">
+    <input type="email" class="form-control ipt-form" id="email" placeholder="Email Address">
+  </div>
+  <div class="form-group">
+  
+    <input type="password" class="form-control ipt-form" id="password-field" placeholder="Password">
+  </div>
+<div class="">
+ <div class="col-auto btnLogin">
+                        <span>Login</span>
+                      </div>
+  </div>
+</form>
+		</div>
+		</div>
+		</div>
+		</div>
+    
+
+    <div class="footerSection">
+      <div class="container">
+        <div class="footWrap login-wrap">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/images/footerLogo.png" alt="" />
+            </div>
+            <div class="col-md-2 col-6">
+             
+            </div>
+            <div class="col-md-2 col-6">
+             
+            </div>
+            <div class="col-md-4">
+            <div class="col-md-12">
+			<div class="row">
+			<div class="col-md-6">
+			<div>
+			<a href=""><h5>Login</h5></a>
+			<a href=""><h5>Logout</h5></a>
+		   </div>
+			</div>
+			<div class="col-md-6">
+			<div>
+			<h5></h5>
+			<a href=""><h5>Dashboard</h5></a>
+		   </div>
+			</div>
+			</div>
+			
+			</div>
+            </div>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+    <script src="assets/js/Vendor/jquery/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/Vendor/jquery/jquery-ui.min.js"></script>
+    <script src="assets/js/Vendor/fancybox/jquery.fancybox.js"></script>
+    <script src="assets/js/Vendor/elevatezoom/jquery.elevatezoom.js"></script>
+    <script src="assets/js/Vendor/panZoom/panZoom.js"></script>
+    <script src="assets/js/Vendor/ui-carousel/ui-carousel.js"></script>
+    <script src="assets/js/zoom.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@media (max-width: 575.98px) {
+  .socialMedia {
+     list-style-type: none;
+    text-align: right;
+    position: fixed;
+    right: 20px;
+    top: 35%;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+  }
+  .socialMedia li {
+    padding: 12px;
+    display: inline-block;
+  }
+  .bannerText {
+    margin-top: 55px;
+    margin-bottom: 75px;
+    width: 320px;
+  }
+  .navbar-light .navbar-toggler{
+    color: #fff;
+    border: 1px solid #ccc;
+  }
+  .mt-67{
+    margin-top: 30px;
+  }
+  .sectionHeading h1{
+    font-size: 32px;
+  }
+  .navbar-brand img{
+    width: 175px;
+  }
+  .imageWrap{
+    min-height: 180px;
+  }
+  .specificationWrap{
+    margin: 80px 0px 40px 0px;
+  }
+  .tab-pane{
+    padding: 15px;
+  }
+  .prodDetailName{
+    font-size: 38px;
+  }
+  .specificationWrap{
+    font-size: 13px;
+  }
+  .specificationWrap .nav-item{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .specificationWrap .nav-link{
+    font-size: 13px;
+  }
+  .mobCenter{
+    text-align: center;
+  }
+  .mobCenterSocial{
+    text-align: center;
+  }
+  .footWrap .botLink a{
+    padding: 5px 0px;
+  }
+.colRepeat {
+  display: inline-block;
+  margin: 15px auto;
+  }
+.table-responsive {
+    overflow-x: auto;
+  }
+  .color-section{
+    background: none;
+  }
+.alterColor{
+  background-color: rgba(198,198,198,0.2);
+}
+
+.typeWrap{
+	    margin-bottom: 25px;
+}
+
+.typeSection {
+    padding-bottom: 0px;
+}
+.newsletter-head h1{
+	font-size: 2rem;
+}
+.topContentBg{
+	padding:20px;
+}
+.topContentBgMid{
+	padding:20px;
+}
+.topContentBg{
+	font-size: 16px;
+}
+}
+

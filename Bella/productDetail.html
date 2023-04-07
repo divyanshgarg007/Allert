@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/customStyledomest.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/js/Vendor/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/js/Vendor/fancybox/helpers/jquery.fancybox-thumbs.css" />
+    <link href="assets/css/zoom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <title>Product Detail</title>
+    <style>
+      .pricetxt {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 25px;
+        color: #58D8F4;
+      }
+
+      .btn-number {
+        background: linear-gradient(to bottom, #59D9F5, #2D96AD);
+        border-radius: 50%;
+        width: 26px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0;
+      }
+      .btn-number i {
+        color: #fff;
+      }
+
+      .btn-number:focus {
+        box-shadow: none;
+      }
+
+      .input-number-qty {
+        font-family: 'Lato', sans-serif;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: #32353C;
+      }
+
+      .select-box-client {
+        height: 44px;
+        border-radius: 0px;
+        padding: 5px;
+        border: 3px solid #000;
+      }
+
+      .select-box-client:focus {
+        border-color: #000;
+      }
+
+      .set-on-mob {
+        max-width: 33.33%;
+      }
+
+      .content-space {
+        margin-top: 80px;
+      }
+
+      .product_abt h2 {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 40px;
+        color: #000;
+      }
+
+      @media(max-width:767px) {
+        .pdp-image-gallery-block {
+          display: flex;
+          flex-direction: column;
+        }
+        .gallery_pdp_container{
+          order: 2;
+        }
+        .gallery-viewer{
+          padding-top: 0;
+        }
+        a#ui-carousel-prev, a#ui-carousel-next{
+          display: none!important;
+        }
+        .wrapper a img{
+          width: 60px;
+        }
+      }
+
+      @media(min-width:768px) and (max-width:1023px) {
+        .seton-ipad {
+          flex: 0 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="headerSection">
+        <!-- <div class="overlayWraper"></div> -->
+        <div class="header">
+          <div class="container">
+            <div class="row align-items-center header-row">
+              <div class="col-md-3 col-9">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/img/logo.svg" alt="" />
+                </a>
+              </div>
+              <div class="col-3 hide-md visible-xs">
+                <div class="navbar-mobile">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6 col-8 mobile-space">
+                <div class="input-group searchWrap">
+                  <input class="form-control" type="search" value="search" id="example-search-input">
+                </div>
+              </div>
+              <div class="col-md-3 col-4 mobile-space">
+                <div class="header_actions">
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/img/user.svg" alt="" />
+                  </a>
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/img/cart.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                  <button class="navbar-toggler hide-xs" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Brands </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Working for Domest </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bodySection content-space">
+        <div class="container">
+          <div class="breadCrumbwrap">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#"> Onze apparaten</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#"> Drogen </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a>KOBLENZ8600TK-3</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="row">
+            <div class="col-auto">
+              <div class="pdp-image-gallery-block">
+                <!-- Gallery  Thumbnail Images-->
+                <div class="gallery_pdp_container">
+                  <div id="gallery_pdp">
+                    <a href="#" data-image="assets/images/small/image1.png" data-zoom-image="images/large/image1.jpg">
+                      <img id="" src="assets/images/thumb/image1.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image2.png" data-zoom-image="assets/images/large/image2.jpg">
+                      <img id="" src="assets/images/thumb/image2.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image3.png" data-zoom-image="assets/images/large/image3.jpg">
+                      <img id="" src="assets/images/thumb/image3.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image4.png" data-zoom-image="assets/images/large/image4.jpg">
+                      <img id="" src="assets/images/thumb/image4.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image1.png" data-zoom-image="assets/images/large/image1.jpg">
+                      <img id="" src="assets/images/thumb/image1.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image2.png" data-zoom-image="assets/images/large/image2.jpg">
+                      <img id="" src="assets/images/thumb/image2.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image3.png" data-zoom-image="assets/images/large/image3.jpg">
+                      <img id="" src="assets/images/thumb/image3.jpg" />
+                    </a>
+                    <a href="#" data-image="assets/images/small/image4.png" data-zoom-image="assets/images/large/image4.jpg">
+                      <img id="" src="assets/images/thumb/image4.jpg" />
+                    </a>
+                  </div>
+                  <!-- Up and down button for vertical carousel -->
+                  <a href="#" id="ui-carousel-next" style="display: inline;"></a>
+                  <a href="#" id="ui-carousel-prev" style="display: inline;"></a>
+                </div>
+                <!-- Gallery -->
+                <!-- gallery Viewer medium image -->
+                <div class="gallery-viewer">
+                  <img id="zoom_10" src="assets/images/small/image1.png" data-zoom-image="assets/images/large/image1.jpg" />
+                </div>
+                <!-- gallery Viewer -->
+                <div id="enlarge_gallery_pdp">
+                  <div class="enl_butt">
+                    <a class="enl_but enl_fclose" title="Close"></a>
+                    <a class="enl_but enl_fright" title="Next"></a>
+                    <a class="enl_but enl_fleft" title="Prev"></a>
+                  </div>
+                  <div class="mega_enl"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col seton-ipad">
+              <div class="product_abt">
+                <h2>Refrigerator Model GB40-010EW</h2>
+                <div class="pricetxt"> 12 items in stock </div>
+                <div class="price-box">
+                  <span class="detPrice">$250</span>
+                  <span class="originalPrice">$250</span>
+                </div>
+                <p class="txtDesc"> De nieuwe, strak ontworpen inbouw koeler BERLIN088-4A++ heeft een tijdloze stijl die perfect past in iedere keuken. </p>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-xs-4 set-on-mob">
+                  <div class="input-group align-items-center">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-left-minus btn btn-number" data-type="minus" data-field="">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                    <input type="text" id="quantity" name="quantity" class="form-control input-number-qty" value="1" min="1" max="100">
+                    <span class="input-group-btn">
+                      <button type="button" class="quantity-right-plus btn btn-number" data-type="plus" data-field="">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-8 col-xs-8 ">
+                  <a href="" class="btnCart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="specificationWrap">
+                <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Description</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Gallery</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <p>De nieuwe, strak ontworpen inbouw koeler BERLIN088-4A++ heeft een tijdloze stijl die perfect past in iedere keuken. Deze inbouw koeler heeft een nishoogte van 88cm. Ondanks zijn geringe afmetingen heeft de koeler toch nog liefst 130 liter netto inhoud, verdeeld over een koelgedeelte van 105 liter en een 4-sterren vriesgedeelte van 15 liter. De BERLIN088-4A++ is voorzien van een tweetal glazen legplanken waarvan er één in hoogte verstelbaar is. Door al deze ruimte kunt u al uw spullen kwijt, waardoor u minder vaak naar de winkel hoeft en dus meer tijd over houdt voor andere bezigheden. De deur is voorzien van 3 handige bakken, waardoor de ruimte nog eens extra goed benut wordt.</p>
+                    <p>De koeler is luxe afgewerkt met zilverkleurige accenten. Met het sleepdeur systeem past de BERLIN088-4A++ in nagenoeg iedere keuken, of deze nou modern, klassiek of parralel is.</p>
+                    <p>Met het A++ energielabel is deze koeler ook nog eens zeer energiezuinig. Hij presteert krachtig en beschikt over milieuvriendelijke functies waardoor er minder energie verbruikt wordt en u dus bijdraagt aan het milieu en ook nog eens geld bespaart.</p>
+                    <hr class="hrDark" />
+                    <div class="row detailFont">
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0 color-section">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0 color-section">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0 color-section">
+                          <div class="col">Uitvoering :</div>
+                          <div class="text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row pt-3 pb-3 ml-0 mr-0 color-section">
+                          <div class="col">Uitvoering :</div>
+                          <div class="col-auto text-right">Crystal Glass & Carbon Steel</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <p>De nieuwe, strak ontworpen inbouw koeler BERLIN088-4A++ heeft een tijdloze stijl die perfect past in iedere keuken. Deze inbouw koeler heeft een nishoogte van 88cm. Ondanks zijn geringe afmetingen heeft de koeler toch nog liefst 130 liter netto inhoud, verdeeld over een koelgedeelte van 105 liter en een 4-sterren vriesgedeelte van 15 liter. De BERLIN088-4A++ is voorzien van een tweetal glazen legplanken waarvan er één in hoogte verstelbaar is. Door al deze ruimte kunt u al uw spullen kwijt, waardoor u minder vaak naar de winkel hoeft en dus meer tijd over houdt voor andere bezigheden. De deur is voorzien van 3 handige bakken, waardoor de ruimte nog eens extra goed benut wordt.</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <p>De koeler is luxe afgewerkt met zilverkleurige accenten. Met het sleepdeur systeem past de BERLIN088-4A++ in nagenoeg iedere keuken, of deze nou modern, klassiek of parralel is.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bestseller_section">
+          <div class="container-fluid">
+            <div class="sectionHeading">
+              <h1>Onze Bestsellers</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="slick-slider slider-detail-space">
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-items">
+                <span>Sale</span>
+                <img src="assets/img/slide1.png">
+                <div class="item_info">
+                  <h4>KS290-V-280GI</h4>
+                  <p>A spacious catering refrigerator in a sleek stainless steel color!</p>
+                  <div class="item_price">
+                    <h5>$1384</h5>
+                    <h6>$1384</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerSection">
+        <div class="container">
+          <div class="footWrap">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="assets/img/footer-logo.svg" alt="" class="mt-4 img-fluid" />
+              </div>
+              <div class="col-md-2 col-6">
+                <h5>Lkantenservice</h5>
+                <ul class="botLink">
+                  <li>
+                    <a href="#">Optical</a>
+                  </li>
+                  <li>
+                    <a href="#">Sun</a>
+                  </li>
+                  <li>
+                    <a href="#">Rugs</a>
+                  </li>
+                  <li>
+                    <a href="#">Accessories</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-6">
+                <h5>Lkantenservice</h5>
+                <ul class="botLink">
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Live Chat</a>
+                  </li>
+                  <li>
+                    <a href="#">Request Product</a>
+                  </li>
+                  <li>
+                    <a href="#">Return Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Nieuwsbrief</h5>
+                <div class="subscribeWrap">
+                  <div class="subscribe-box">
+                    <input type="email" class="form-control form-control-lg" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <button type="button" class="btn btn-lg btn-primary">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 copyright">© 2020 Creation All Rights Reserved</div>
+            </div>
+          </div>
+          <!-- <div class="copyWrap"><div class="row"><div class="col-md-6 mobCenter">© 2020 Creation All Rights Reserved</div><div class="col-md-6 botSocialLink mobCenterSocial"><a href="#"><img src="assets/images/medium.svg" alt="" /></a><a href="#"><img src="assets/images/pinterest.svg" alt="" /></a><a href="#"><img src="assets/images/Googleplus.svg" alt="" /></a></div></div></div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="assets/js/Vendor/jquery/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/Vendor/jquery/jquery-ui.min.js"></script>
+    <script src="assets/js/Vendor/fancybox/jquery.fancybox.js"></script>
+    <script src="assets/js/Vendor/elevatezoom/jquery.elevatezoom.js"></script>
+    <script src="assets/js/Vendor/panZoom/panZoom.js"></script>
+    <script src="assets/js/Vendor/ui-carousel/ui-carousel.js"></script>
+    <script src="assets/js/zoom.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script>
+      $(document).ready(function() {
+        var quantitiy = 0;
+        $('.quantity-right-plus').click(function(e) {
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          // If is not undefined
+          $('#quantity').val(quantity + 1);
+          // Increment
+        });
+        $('.quantity-left-minus').click(function(e) {
+          // Stop acting like a button
+          e.preventDefault();
+          // Get the field name
+          var quantity = parseInt($('#quantity').val());
+          // If is not undefined
+          // Increment
+          if (quantity > 0) {
+            $('#quantity').val(quantity - 1);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
